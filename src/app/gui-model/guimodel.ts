@@ -13,21 +13,38 @@ export class GuiModel {
                     "title": "Friend",
                     "url": "/friend",
                     "formFieldList": [
+
+                        {
+                            "id": "friend",
+                            "type": "autocomplete",
+                            "name": "Friend",
+                            "url": "/friend",
+                            "defaultKey": "friendKey",
+                            "readonly": true,
+                            "form": "FriendForm",
+                            "width": 2
+                        },
                         {
                             "id": "familyName",
                             "type": "text",
                             "name": "FamilyName",
                             "width": 1,
-                            "required": true
+                            "required": false
                         },
                         {
                             "id": "firstName",
                             "type": "text",
                             "name": "FirstName",
                             "width": 1,
-                            "required": true
+                            "required": false
                         },
-                        { "id": "nickname", "type": "text", "name": "Nickname", "width": 2, "required": true },
+                        {
+                            "id": "nickname",
+                            "type": "text",
+                            "name": "Nickname",
+                            "width": 2,
+                            "required": false
+                        },
                         {
                             "id": "group",
                             "type": "autocomplete",
@@ -77,12 +94,23 @@ export class GuiModel {
                     "title": "Location",
                     "url": "/location",
                     "formFieldList": [
+
+                        {
+                            "id": "location",
+                            "type": "autocomplete",
+                            "name": "Location",
+                            "url": "/location",
+                            "defaultKey": "locationKey",
+                            "readonly": true,
+                            "form": "LocationForm",
+                            "width": 2
+                        },
                         {
                             "id": "name",
                             "type": "text",
                             "name": "LocationName",
                             "width": 2,
-                            "required": true
+                            "required": false
                         },
                         {
                             "id": "name",
@@ -131,12 +159,20 @@ export class GuiModel {
                             "width": 2,
                             "required": false
                         },
+                        {
+                            "type": "cancelButton",
+                            "name": "Cancel"
+                        },
+                        {
+                            "type": "okButton",
+                            "name": "Ok"
+                        }
                     ]
                 },
                 {
                     "id": "AddActivityForm",
                     "title": "Activity",
-                    "url": "/friend/:friendKey/activity",
+                    "url": "activity",
                     "formFieldList": [
                         {
                             "id": "activity",
