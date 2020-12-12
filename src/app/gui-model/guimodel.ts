@@ -282,9 +282,7 @@ export class GuiModel {
                             "color": "purple",
                             "search": true,
                             "url": "/activity",
-                            "form": {
-                                "form": "AddActivityForm"
-                            }
+                            "page": "activityfriendpage",
                         },
 
                     ]
@@ -295,11 +293,11 @@ export class GuiModel {
                         {
                             "type": "backbutton",
                         },
+
                         {
                             "type": "newButton",
                             "name": "EditFriend",
-                            "search": true,
-                            "icon": "fa-user",
+                            "icon": "fa-friend",
                             "color": "green",
                             "form": {
                                 "form": "FriendForm"
@@ -327,6 +325,65 @@ export class GuiModel {
                         },
                     ]
                 },
+
+                {
+                    "id": "activityfriendpage",
+                    "elementList": [
+                        {
+                            "type": "backbutton",
+                        },
+
+                        {
+                            "type": "newButton",
+                            "name": "EditActivity",
+                            "icon": "fa-user",
+                            "color": "green",
+                            "form": {
+                                "form": "AddActivityForm"
+                            }
+                        },
+                        {
+                            "type": "list",
+                            "icon": "fa-activiy",
+                            "color": "orange",
+                            "search": true,
+                            "url": "/activity/:activityKey/friend",
+                            "form": {
+                                "form": "AddActivityForm"
+                            }
+                        },
+                    ]
+                },
+
+                {
+                    "id": "activitylocationpage",
+                    "elementList": [
+                        {
+                            "type": "backbutton",
+                        },
+                        {
+                            "type": "newButton",
+                            "name": "EditLocation",
+                            "icon": "fa-location",
+                            "color": "green",
+                            "form": {
+                                "form": "LocationForm"
+                            }
+                        },
+                        {
+                            "type": "list",
+                            "icon": "fa-activiy",
+                            "color": "orange",
+                            "search": true,
+                            "url": "/location/:locationKey/activity",
+                            "form": {
+                                "form": "LocationForm"
+                            }
+                        },
+
+                    ]
+                },
+
                 {
                     "id": "locationspage",
                     "elementList": [
@@ -345,13 +402,11 @@ export class GuiModel {
                         },
                         {
                             "type": "list",
-                            "icon": "fa-home",
-                            "color": "blue",
+                            "icon": "fa-location",
+                            "color": "yellow",
                             "search": true,
                             "url": "/location",
-                            "form": {
-                                "form": "LocationForm"
-                            }
+                            "page": "activitylocationpage",
                         },
                     ]
                 },
