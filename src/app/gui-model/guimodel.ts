@@ -298,6 +298,7 @@ export class GuiModel {
                         {
                             "type": "newButton",
                             "name": "EditFriend",
+                            "search": true,
                             "icon": "fa-user",
                             "color": "green",
                             "form": {
