@@ -172,7 +172,7 @@ export class GuiModel {
                 {
                     "id": "AddActivityForm",
                     "title": "Activity",
-                    "url": "activity",
+                    "url": "/activity",
                     "formFieldList": [
                         {
                             "id": "activity",
@@ -331,7 +331,7 @@ export class GuiModel {
                         },
 
                         {
-                            "type": "newButton",
+                            "type": "button",
                             "name": "EditFriend",
                             "icon": "fa-friend",
                             "color": "green",
@@ -341,7 +341,7 @@ export class GuiModel {
                         },
 
                         {
-                            "type": "newButton",
+                            "type": "button",
                             "name": "AddActivity",
                             "icon": "fa-user",
                             "color": "green",
@@ -370,7 +370,7 @@ export class GuiModel {
                         },
 
                         {
-                            "type": "newButton",
+                            "type": "button",
                             "name": "EditActivity",
                             "icon": "fa-user",
                             "color": "green",
@@ -398,7 +398,7 @@ export class GuiModel {
                             "type": "backbutton",
                         },
                         {
-                            "type": "newButton",
+                            "type": "button",
                             "name": "EditLocation",
                             "icon": "fa-location",
                             "color": "green",
