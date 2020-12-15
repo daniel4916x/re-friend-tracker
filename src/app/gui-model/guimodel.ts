@@ -427,7 +427,7 @@ export class GuiModel {
                             "type": "backbutton",
                         },
                         {
-                            "type": "newButton",
+                            "type": "button",
                             "name": "NewLocation",
                             "icon": "fa-home",
                             "color": "green",
